@@ -1,47 +1,132 @@
-CODSOFT AI Internship Projects
+# CODSOFT AI Internship Projects
 
-Overview
+## Overview
 
-This repository contains the projects completed during the CODSOFT Artificial Intelligence Internship. The internship provided hands-on experience in developing AI-based applications using Python and fundamental Artificial Intelligence concepts.
+This repository contains the projects completed during the **CODSOFT Artificial Intelligence Internship**. The internship provided practical exposure to Artificial Intelligence concepts by developing real-world AI applications using Python.
 
-Projects
+The projects focus on applying concepts from **Computer Vision, Natural Language Processing (NLP), Game Theory, and Recommendation Systems** to create intelligent and interactive applications.
 
-1. AI Chatbot with Rule-Based Responses
+---
 
-Developed a Python-based chatbot capable of interacting with users through predefined rule-based responses. The chatbot handles greetings, common questions, and provides date and time information using Python's datetime module.
+## Projects
 
-Technologies: Python, Datetime Module
+### 1. AI Chatbot with Rule-Based Responses
 
-2. Tic-Tac-Toe AI Agent
+Developed an interactive chatbot using Python that communicates with users through predefined rule-based responses. The chatbot can answer common questions, greet users, provide date and time information, and handle user inputs efficiently.
 
-Designed an intelligent Tic-Tac-Toe game featuring an unbeatable AI opponent. The AI utilizes the Minimax algorithm to evaluate possible moves and make optimal decisions.
+**Features:**
 
-Technologies: Python, Minimax Algorithm, Game Theory
+* User-friendly conversational interface
+* Handles greetings and common queries
+* Date and time functionality
+* Input validation
+* Supports uppercase and lowercase inputs
 
-3. Movie Recommendation System
+**Technologies Used:**
 
-Built a content-based recommendation system that suggests movies to users based on genre similarity and user preferences.
+* Python
+* Datetime Module
 
-Technologies: Python, Content-Based Filtering
+---
 
-Skills Gained
+### 2. Tic-Tac-Toe AI Agent
 
-- Python Programming
-- Artificial Intelligence Fundamentals
-- Game Theory
-- Recommendation Systems
-- Problem Solving
-- Algorithm Design
-- User Interaction Development
+Designed an intelligent Tic-Tac-Toe game featuring an AI opponent. The AI uses the Minimax algorithm to analyze all possible moves and select the optimal strategy, making it highly challenging for the user to win.
 
-Internship Organization
+**Features:**
 
-CODSOFT
+* Human vs AI gameplay
+* Intelligent decision-making
+* Optimal move selection
+* Interactive game board
 
-Author
+**Technologies Used:**
 
-Rosy S
+* Python
+* Minimax Algorithm
+* Game Theory
+
+---
+
+### 3. Image Captioning AI
+
+Built an AI-powered image captioning system that combines Computer Vision and Natural Language Processing to automatically generate captions for images. The project uses a pre-trained Transformer model to understand image content and generate meaningful text descriptions.
+
+**Features:**
+
+* Automatic image caption generation
+* Combines Computer Vision and NLP
+* Supports multiple image formats
+* Generates human-readable descriptions
+
+**Technologies Used:**
+
+* Python
+* Transformers (BLIP Model)
+* PyTorch
+* Pillow (PIL)
+
+---
+
+### 4. Movie Recommendation System
+
+Developed a recommendation system that suggests movies based on user preferences and genre similarity. The application provides personalized recommendations through a simple and interactive interface.
+
+**Features:**
+
+* Genre-based recommendations
+* Interactive user interface
+* Personalized suggestions
+* Input validation
+
+**Technologies Used:**
+
+* Python
+* Content-Based Filtering
+
+---
+
+### 5. Face Detection System
+
+Developed a Computer Vision application capable of detecting human faces from images using a pre-trained Haar Cascade Classifier. The application identifies and highlights faces automatically.
+
+**Features:**
+
+* Single and multiple face detection
+* Highlights detected faces
+* Displays face count
+* Handles invalid image paths
+
+**Technologies Used:**
+
+* Python
+* OpenCV
+* Haar Cascade Classifier
+
+---
+
+## Skills Gained
+
+Throughout this internship, I gained practical experience in:
+
+* Python Programming
+* Artificial Intelligence Fundamentals
+* Computer Vision
+* Natural Language Processing (NLP)
+* Game Theory
+* Recommendation Systems
+* Problem Solving
+* Algorithm Design
+* User Interaction Development
+## Internship Organization
+*CODSOFT
+
+## Author
+
+**Rosy S**
 
 B.Tech Artificial Intelligence and Data Science
 
 Karunya Institute of Technology and Sciences
+
+CODSOFT Artificial Intelligence Intern
