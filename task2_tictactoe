@@ -1,0 +1,61 @@
+Tic-Tac-Toe AI Agent Using Minimax Algorithm
+
+Project Overview
+
+This project implements an AI-powered Tic-Tac-Toe game where a human player competes against an intelligent computer opponent. The AI uses the Minimax algorithm to analyze all possible game states and select the optimal move, making it unbeatable.
+
+Features
+
+- Human vs AI gameplay
+- Unbeatable AI using the Minimax algorithm
+- Automatic win, loss, and draw detection
+- Interactive command-line interface
+- Strategic decision-making based on game theory
+
+Technologies Used
+
+- Python 3
+- Minimax Algorithm
+- Artificial Intelligence Concepts
+
+How It Works
+
+1. The human player makes a move by selecting a position on the board.
+2. The AI evaluates all possible future game states using the Minimax algorithm.
+3. The AI chooses the best possible move to maximize its chances of winning.
+4. The game continues until a player wins or the match ends in a draw.
+
+Sample Output
+
+You are X, AI is O
+
+| | |
+
+| | |
+
+| | |
+
+Enter position (1-9): 5
+
+AI's Turn...
+
+The game continues until a win or draw is achieved.
+
+Learning Outcomes
+
+- Understanding Artificial Intelligence fundamentals
+- Implementing the Minimax search algorithm
+- Applying game theory concepts
+- Developing interactive Python applications
+- Problem-solving and logical thinking
+
+Future Enhancements
+
+- Add Alpha-Beta Pruning for optimization
+- Develop a graphical user interface (GUI)
+- Implement different difficulty levels
+- Add score tracking and multiplayer mode
+
+Author
+
+Rosy S
