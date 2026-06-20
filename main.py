@@ -1,102 +1,38 @@
-import math
+# CODSOFT - Recommendation System
 
-board = [' ' for _ in range(9)]
+movies = {
+    "action": ["Avengers", "John Wick", "Batman"],
+    "comedy": ["3 Idiots", "Jumanji", "Mr. Bean"],
+    "horror": ["The Conjuring", "Annabelle", "Insidious"],
+    "romance": ["Titanic", "The Notebook", "La La Land"],
+    "science fiction": ["Interstellar", "Inception", "The Martian"]
+}
 
-def print_board():
-    for i in range(0, 9, 3):
-        print('|'.join(board[i:i+3]))
-        if i < 6:
-            print('-' * 5)
+print("========== Movie Recommendation System ==========")
 
-def check_winner(b, player):
-    win_positions = [
-        [0,1,2], [3,4,5], [6,7,8],
-        [0,3,6], [1,4,7], [2,5,8],
-        [0,4,8], [2,4,6]
-    ]
-    return any(all(b[pos] == player for pos in combo) for combo in win_positions)
+while True:
 
-def is_draw(b):
-    return ' ' not in b
+    print("\nAvailable Categories:")
 
-def minimax(b, depth, is_maximizing):
-    if check_winner(b, 'O'):
-        return 1
-    if check_winner(b, 'X'):
-        return -1
-    if is_draw(b):
-        return 0
+    for category in movies:
+        print("-", category.title())
 
-    if is_maximizing:
-        best_score = -math.inf
-        for i in range(9):
-            if b[i] == ' ':
-                b[i] = 'O'
-                score = minimax(b, depth + 1, False)
-                b[i] = ' '
-                best_score = max(score, best_score)
-        return best_score
+    choice = input(
+        "\nEnter your favourite category (or type 'exit'): "
+    ).strip().lower()
+
+    if choice == "exit":
+        print("\nThank you for using the Recommendation System.")
+        break
+
+    elif choice in movies:
+
+        print("\nRecommended Movies:")
+
+        for movie in movies[choice]:
+            print("•", movie)
+
     else:
-        best_score = math.inf
-        for i in range(9):
-            if b[i] == ' ':
-                b[i] = 'X'
-                score = minimax(b, depth + 1, True)
-                b[i] = ' '
-                best_score = min(score, best_score)
-        return best_score
+        print("\nInvalid category.")
 
-def ai_move():
-    best_score = -math.inf
-    move = -1
-
-    for i in range(9):
-        if board[i] == ' ':
-            board[i] = 'O'
-            score = minimax(board, 0, False)
-            board[i] = ' '
-            if score > best_score:
-                best_score = score
-                move = i
-
-    board[move] = 'O'
-
-def human_move():
-    while True:
-        try:
-            move = int(input("Enter position (1-9): ")) - 1
-            if 0 <= move < 9 and board[move] == ' ':
-                board[move] = 'X'
-                break
-            else:
-                print("Invalid move!")
-        except:
-            print("Enter a valid number!")
-
-def play_game():
-    print("You are X, AI is O")
-    print_board()
-
-    while True:
-        human_move()
-        print_board()
-
-        if check_winner(board, 'X'):
-            print("You win!")
-            break
-        if is_draw(board):
-            print("Draw!")
-            break
-
-        print("AI's Turn...")
-        ai_move()
-        print_board()
-
-        if check_winner(board, 'O'):
-            print("AI wins!")
-            break
-        if is_draw(board):
-            print("Draw!")
-            break
-
-play_game()
+        print("Please choose from the available categories.")
