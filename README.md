@@ -119,7 +119,7 @@ Throughout this internship, I gained practical experience in:
 * Algorithm Design
 * User Interaction Development
 ## Internship Organization
-*CODSOFT
+CODSOFT
 
 ## Author
 
